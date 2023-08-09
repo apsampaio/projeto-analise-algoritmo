@@ -1,3 +1,6 @@
+# Andre Sampaio
+# Thayná Andressa
+
 def merge(A: list, aux: list, start: int, mid: int, end: int):
     for k in range(start, end + 1):
         aux[k] = A[k]
@@ -26,7 +29,7 @@ def mergesort(A, aux, start, end):
 
     mid = (start + end) // 2
     mergesort(A, aux, start, mid)   # left
-    mergesort(A, aux, mid + 1, end)  # end
+    mergesort(A, aux, mid + 1, end)  # right
     merge(A, aux, start, mid, end)
 
 
